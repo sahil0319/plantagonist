@@ -99,6 +99,7 @@ public class CareLogController {
 
         todayTasksTable.getColumns().setAll(taskCol, plantCol, statusCol, actionCol);
         todayTasksTable.setItems(todayTasks);
+        todayTasksTable.setStyle("-fx-text-fill: white;");
 
         // Upcoming tasks table
         TableColumn<CareTask, String> dateCol = new TableColumn<>("Date");
@@ -121,6 +122,8 @@ public class CareLogController {
 
         upcomingTasksTable.getColumns().setAll(dateCol, upcomingTaskCol, upcomingPlantCol, upcomingActionCol);
         upcomingTasksTable.setItems(upcomingTasks);
+        upcomingTasksTable.setStyle("-fx-text-fill: white;");
+
 
         // Care history table
         TableColumn<CareLogEntry, String> historyDateCol = new TableColumn<>("Date");
@@ -153,6 +156,8 @@ public class CareLogController {
 
         careHistoryTable.getColumns().setAll(historyDateCol, historyActionCol, historyPlantCol, historyDetailsCol);
         careHistoryTable.setItems(careHistory);
+        careHistoryTable.setStyle("-fx-text-fill: white;");
+
 
         // Notifications list
         notificationsList.setItems(notifications);
